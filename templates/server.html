@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IoT Agent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/styles/registration.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="/static/scripts/server.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="logo-box">
+      <img src="/static/imgs/logo.svg" alt="logo" class="logo">
+    </section>
+    <div class="pagedescription">
+       Settings Server Configuration
+    </div>
+
+    <form>
+      <div class="group">
+        <input type="text" name="serveruri" text="ssid" required="required" />
+        <label for="serveruri">Server URI</label>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <span class="hint">Example https://settings.server.com</span>
+      </div>
+
+      <a class="btn" onClick="sendForm()" href="#">Connect</a>
+      <div class="fix"></div>
+    </form>
+  </div>
+</body>
+</html>
+
+

@@ -10,3 +10,9 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+
+# MacOS folder index
+.DS_Store
+
+# Visual Studio Code Project settings
+.vscode

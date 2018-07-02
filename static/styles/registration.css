@@ -1,0 +1,183 @@
+body {
+  margin: 0px auto;
+  background: rgb(203, 245, 244);
+  background-repeat: no-repeat;
+  background-image: linear-gradient(355deg, rgb(203, 245, 244), rgb(203, 245, 244), #37bdb9, #77537d ,#4c187b);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+p {
+  color: #ffffff;
+}
+
+form {
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 340px;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.25);
+}
+
+form .group {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+
+}
+
+hr {
+  margin-left: 38px;
+  margin-right: 38px;
+  color: #4a4a4a;
+}
+
+form > div {
+  position: relative;
+}
+form > div > label {
+  position: absolute;
+}
+
+label {
+    margin-top: -44px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    color: #9b9b9b;
+}
+
+input[type="text"]
+{
+    border: 0;
+    border-bottom: 1px solid #4a4a4a;
+    outline: 0;
+    box-sizing : border-box;
+    width: 100%;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #4a4a4a
+}
+
+input[type="password"]
+{
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #4a4a4a;
+    outline: 0;
+    box-sizing : border-box;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #4a4a4a
+}
+
+input:focus + label {
+  color:#1898ff;
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+
+.pagedescription {
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-top: 38px;
+  margin-bottom: 28px;
+  margin-right: auto;
+  width: 266px;
+  height: 19px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.menu {
+  height: 156px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper {
+}
+
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 115px;
+}
+
+button {
+     display: block;
+     background:none!important;
+     color:inherit;
+     border:none;
+     padding:0!important;
+     font: inherit;
+     position: relative;
+     /*border is optional*/
+     border-bottom:1px solid #444;
+     cursor: pointer;
+}
+
+.hint {
+  width: 228px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9b9b9b;
+}
+
+.connect-btn {
+  float: right;
+  width: 91px;
+  height: 28px;
+  border: 0;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1898ff;
+}
+
+.fix {
+  height: 1px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  font-family: Arial;
+  color: #1898ff;
+  float: right;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 0px 10px 0px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+.btn:hover {
+  background: #ffffff;
+  text-decoration: none;
+}
+
+
