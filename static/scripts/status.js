@@ -63,10 +63,11 @@ function setUptime(uptimeVal) {
 
 function setRegistered(data) {
     var registered = document.getElementById('registered');
+    date = new Date(data['date'] * 1000)
     if (data) {
         txt = "<ul>"
-        txt += "<li>" + "date: " + data['date'] + "</li>"
-        txt += "<li>" + "status: " + data['status'] + "</li>"
+        txt += "<li>" + "date " + date.toDateString() + "</li>"
+        txt += "<li>" + "status " + data['status'] + "</li>"
         txt += "</ul>"
         registered.innerHTML = txt;
     } else {
