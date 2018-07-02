@@ -237,6 +237,7 @@ button {
 }
 
 .device-online {
+  text-transform: uppercase;
   width: 74px;
   height: 22px;
   border-radius: 14.5px;
@@ -244,10 +245,12 @@ button {
   text-align: center;
   color: #ffffff;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .device-offline {
+  text-transform: uppercase;
   width: 74px;
   height: 22px;
   border-radius: 14.5px;
@@ -255,7 +258,8 @@ button {
   text-align: center;
   color: #ffffff;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .menu-icon{
