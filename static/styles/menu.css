@@ -177,11 +177,12 @@ button {
 .information {
   margin-top: 56px;
   width: 624px;
-  height: 146px;
+  height: 100%;
   color: #4a4a4a;
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.25);
+  padding: 26px;
 }
 
 .btn-reboot {

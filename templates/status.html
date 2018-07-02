@@ -1,38 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>IoT Agent</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/static/styles/menu.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script src="/static/scripts/status.js"></script>
-</head>
-<body>
-<div class="menu"></div>
-<div class="wrapper">
-  <navigation>
-    <ul>
-    <li class="left-side-btn"><a class="btn-menu" onClick="sendForm()" href="#">
-      <i class="menu-icon" aria-hidden="true"></i>MENU</a></li>
-    <li><a class="logo" href="#">
-      <img src="/static/imgs/logo-icon.svg" alt="logo">
-    </a></li>
-    <li class="right-side-btn"><a class="btn-reboot" onClick="sendForm()" href="#">REBOOT</a></li>
-    <li class="right-side-btn"><a class="btn-reset" onClick="sendForm()" href="#">RESET</a></li>
-    </ul>
-  </navigation>
-  <div class="information">
-    <h5>IoT Device: <span id="device_id"></span> <span id="online"></span></h5>
-    <div id="example"></div>
 
-    <p>Registered: <span id="registered"></span></p>
-    <p>Hardware Info: <span id="hwinfo"></span></p>
-    <p>Software Info: <span id="swinfo"></span></p>
-    <p>Uptime: <span id="uptime"></span></p>
-    <p>Network Interfaces: <span id="netinfo"></span></p>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IoT Agent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="/static/styles/menu.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="/static/scripts/status.js"></script>
+</head>
+
+<body>
+  <div class="menu"></div>
+  <div class="wrapper">
+    <navigation>
+      <ul>
+        <li class="left-side-btn">
+          <a class="btn-menu" onClick="sendForm()" href="#">
+            <i class="menu-icon" aria-hidden="true"></i>MENU</a>
+        </li>
+        <li>
+          <a class="logo" href="#">
+            <img src="/static/imgs/logo-icon.svg" alt="logo">
+          </a>
+        </li>
+        <li class="right-side-btn">
+          <a class="btn-reboot" onClick="sendForm()" href="#">REBOOT</a>
+        </li>
+        <li class="right-side-btn">
+          <a class="btn-reset" onClick="sendForm()" href="#">RESET</a>
+        </li>
+      </ul>
+    </navigation>
+    <div class="information">
+      <b>IoT Device</b>
+      <span id="device_id"></span>
+      <span id="online"></span>
+    </div>
+    <div class="information">
+      <div id="example"></div>
+    </div>
+    <div class="information">
+      <p>Registered:
+        <span id="registered"></span>
+      </p>
+    </div>
+    <div class="information">
+      <p>Hardware Info:
+        <span id="hwinfo"></span>
+      </p>
+    </div>
+    <div class="information">
+    <p>Software Info:
+      <span id="swinfo"></span>
+    </p>
+    </div>
+    <div class="information">
+    <p>Uptime:
+      <span id="uptime"></span>
+    </p>
+    </div>
+    <div class="information">
+    <p>Network Interfaces:
+      <span id="netinfo"></span>
+    </p>
+    </div>
+
+
+
+
+
+
   </div>
-</div>
+  </div>
 </body>
+
 </html>
