@@ -89,7 +89,7 @@ input[type="password"]
 .menu {
     position: absolute;
     z-index: -3;
-    margin-top: -20px;
+    margin-top: -30px;
     height: 156px;
     width: 100%;
     background-color:rgba(0, 0, 0, 0.6)
@@ -105,7 +105,10 @@ input[type="password"]
 .logo {
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: inline-block;
+    margin-top: -10px;
+    width: 30px;
+    height: 30px;
 }
 
 button {
@@ -185,7 +188,7 @@ button {
   -webkit-border-radius: 15;
   -moz-border-radius: 15;
   border-radius: 15px;
-  font-family: Arial;
+  font-family: Roboto;
   color: #ffffff;
   font-size: 14px;
   background: #e98585;
@@ -202,7 +205,7 @@ button {
   -webkit-border-radius: 15;
   -moz-border-radius: 15;
   border-radius: 15px;
-  font-family: Arial;
+  font-family: Roboto;
   color: #ffffff;
   font-size: 14px;
   background: #fa9a75;
@@ -219,7 +222,7 @@ button {
   -webkit-border-radius: 15;
   -moz-border-radius: 15;
   border-radius: 15px;
-  font-family: Arial;
+  font-family: Roboto;
   color: #ffffff;
   font-size: 14px;
   padding: 7px 15px 7px 15px;
@@ -262,4 +265,35 @@ button {
   left: 0px;
   top: 0px;
   font-size: 15px;
+}
+
+navigation ul{
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    text-align: center;
+}
+navigation li{
+    display:inline;
+}
+navigation a{
+    display:inline-block;
+    padding:10px;
+}
+
+navigation .left-side-btn {
+  float:left;
+  display:inline;
+}
+
+navigation .right-side-btn {
+  float:right;
+  display:inline;
+  margin-left: 20px;
+}
+
+navigation .logo {
+  margin-left: 70px;
 }
