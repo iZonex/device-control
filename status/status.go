@@ -148,7 +148,7 @@ func StatusInfo() DeviceInfo {
 	networkInfo := GetNetworkInfo()
 	swInfo := GetSoftwareInfo()
 	hostname, _ := os.Hostname()
-	uuidNumber := uuid.NewV4()
+	uuidNumber, _ := uuid.NewV4()
 	boardType := getBoardModel()
 	devInfo := DeviceInfo{
 		OnLine:            true,
