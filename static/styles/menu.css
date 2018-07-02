@@ -96,7 +96,7 @@ input[type="password"]
 }
 
 .wrapper {
-  width: 620px;
+  width: 680px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -175,7 +175,8 @@ button {
 }
 
 .information {
-  margin-top: 56px;
+  margin-bottom: 56px;
+  margin-top: 26px;
   width: 624px;
   height: 100%;
   color: #4a4a4a;
