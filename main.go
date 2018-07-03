@@ -1,11 +1,12 @@
 package main
 
 import (
-	"device-control/handlers"
-	"device-control/middleware"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/iZonex/device-control/handlers"
+	"github.com/iZonex/device-control/middleware"
 
 	"github.com/gorilla/mux"
 )

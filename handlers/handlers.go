@@ -1,10 +1,11 @@
 package handlers
 
 import (
-	"device-control/status"
-	"device-control/util"
 	"html/template"
 	"net/http"
+
+	"github.com/iZonex/device-control/status"
+	"github.com/iZonex/device-control/util"
 )
 
 type PageData struct {
