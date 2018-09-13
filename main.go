@@ -5,6 +5,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/iZonex/device-control/handlers"
+	"github.com/iZonex/device-control/middleware"
+
 	"github.com/gorilla/mux"
 	"github.com/iZonex/device-control/handlers"
 )
