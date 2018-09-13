@@ -5,22 +5,20 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/iZonex/device-control/handlers"
-	"github.com/iZonex/device-control/middleware"
-
 	"github.com/gorilla/mux"
+	"github.com/iZonex/device-control/handlers"
 )
 
 func main() {
 
 	r := mux.NewRouter()
 	fs := http.FileServer(http.Dir("./static/"))
-	r.HandleFunc("/", middleware.Chain(handlers.WifiHandler, middleware.Method("GET")))
-	r.HandleFunc("/status", middleware.Chain(handlers.MainHandler, middleware.Method("GET")))
-	r.HandleFunc("/api/status", middleware.Chain(handlers.DeviceInformationHandler, middleware.Method("GET")))
-	r.HandleFunc("/wifi", middleware.Chain(handlers.WifiHandler, middleware.Method("GET")))
+	r.HandleFunc("/", handlers.WifiHandler).Methods("GET")
+	r.HandleFunc("/status", handlers.MainHandler).Methods("GET")
+	r.HandleFunc("/api/status", handlers.DeviceInformationHandler).Methods("GET")
+	r.HandleFunc("/wifi", handlers.WifiHandler).Methods("GET")
 	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", fs))
-	r.HandleFunc("/server", middleware.Chain(handlers.ServerHandler, middleware.Method("GET")))
+	r.HandleFunc("/server", handlers.ServerHandler).Methods("GET")
 
 	http.Handle("/", r)
 	srv := &http.Server{
